@@ -29,14 +29,14 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Melyna — Move Goods Smarter, Faster, Anywhere" },
+      { title: "Melyno — Move Goods Smarter, Faster, Anywhere" },
       {
         name: "description",
         content:
-          "Melyna is a logistics marketplace connecting customers with verified transport providers. Request, track, and deliver — all in one place.",
+          "Melyno is a logistics marketplace connecting customers with verified transport providers. Request, track, and deliver — all in one place.",
       },
-      { name: "author", content: "Melyna" },
-      { property: "og:title", content: "Melyna — Smart Logistics Marketplace" },
+      { name: "author", content: "Melyno" },
+      { property: "og:title", content: "Melyno — Smart Logistics Marketplace" },
       {
         property: "og:description",
         content: "Move goods smarter, faster, anywhere. Connect with verified transporters and track in real-time.",

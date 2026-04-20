@@ -4,7 +4,7 @@ import { Navbar } from "@/components/Navbar";
 export const Route = createFileRoute("/tracking")({
   head: () => ({
     meta: [
-      { title: "Live Tracking — Melyna" },
+      { title: "Live Tracking — Melyno" },
       { name: "description", content: "Track your shipment in real-time with live updates." },
     ],
   }),

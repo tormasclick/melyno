@@ -74,7 +74,7 @@ export function Footer() {
           ))}
         </div>
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 md:flex-row">
-          <p className="text-xs text-primary-foreground/60">© {new Date().getFullYear()} Melyna. All rights reserved.</p>
+          <p className="text-xs text-primary-foreground/60">© {new Date().getFullYear()} Melyno. All rights reserved.</p>
           <p className="text-xs text-primary-foreground/60">Built for movers everywhere.</p>
         </div>
       </div>

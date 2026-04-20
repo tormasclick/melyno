@@ -8,8 +8,8 @@ import heroBg from "@/assets/hero-network.jpg";
 export const Route = createFileRoute("/login")({
   head: () => ({
     meta: [
-      { title: "Sign in — Melyna" },
-      { name: "description", content: "Sign in to your Melyna account." },
+      { title: "Sign in — Melyno" },
+      { name: "description", content: "Sign in to your Melyno account." },
     ],
   }),
   component: LoginPage,
@@ -28,10 +28,10 @@ function LoginPage() {
         <div className="relative flex flex-col justify-between p-12 w-full">
           <Logo variant="light" />
           <div>
-            <h2 className="text-4xl font-bold leading-tight">Welcome back to <span className="text-gradient-accent">Melyna</span></h2>
+            <h2 className="text-4xl font-bold leading-tight">Welcome back to <span className="text-gradient-accent">Melyno</span></h2>
             <p className="mt-4 text-white/70 max-w-md">Pick up where you left off. Track shipments, request transport, manage your jobs.</p>
           </div>
-          <div className="text-xs text-white/50">© {new Date().getFullYear()} Melyna</div>
+          <div className="text-xs text-white/50">© {new Date().getFullYear()} Melyno</div>
         </div>
       </div>
 
@@ -80,7 +80,7 @@ function LoginPage() {
             </div>
 
             <p className="text-center text-sm text-muted-foreground">
-              New to Melyna?{" "}
+              New to Melyno?{" "}
               <Link to="/register" className="font-medium text-accent hover:underline">Create account</Link>
             </p>
           </form>

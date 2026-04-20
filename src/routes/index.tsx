@@ -8,7 +8,7 @@ import trackingImg from "@/assets/tracking-preview.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Melyna — Move Goods Smarter, Faster, Anywhere" },
+      { title: "Melyno — Move Goods Smarter, Faster, Anywhere" },
       {
         name: "description",
         content:
@@ -139,7 +139,7 @@ function Features() {
     <section className="py-24 bg-gradient-soft">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto">
-          <span className="text-sm font-semibold uppercase tracking-wider text-accent">Why Melyna</span>
+          <span className="text-sm font-semibold uppercase tracking-wider text-accent">Why Melyno</span>
           <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-primary">Built for movers everywhere</h2>
         </div>
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -226,7 +226,7 @@ function TrackingPreview() {
 
 function Testimonials() {
   const items = [
-    { name: "Aisha M.", role: "Boutique Owner", text: "Melyna saved my Saturday. Got fabric across town in an hour.", icon: "fa-store" },
+    { name: "Aisha M.", role: "Boutique Owner", text: "Melyno saved my Saturday. Got fabric across town in an hour.", icon: "fa-store" },
     { name: "David O.", role: "E-commerce Founder", text: "We dropped 30% in delivery costs. The tracking is gold.", icon: "fa-laptop" },
     { name: "Grace W.", role: "Transporter", text: "I get 4x more jobs since joining. The app is so easy.", icon: "fa-truck" },
   ];
@@ -272,7 +272,7 @@ function CTA() {
           <div className="relative">
             <h2 className="text-3xl sm:text-4xl font-bold text-white">Ready to move?</h2>
             <p className="mt-4 text-white/80 max-w-xl mx-auto">
-              Join thousands using Melyna every day to move goods across cities.
+              Join thousands using Melyno every day to move goods across cities.
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Link to="/request">

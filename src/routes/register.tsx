@@ -9,8 +9,8 @@ import heroBg from "@/assets/hero-network.jpg";
 export const Route = createFileRoute("/register")({
   head: () => ({
     meta: [
-      { title: "Create account — Melyna" },
-      { name: "description", content: "Create your free Melyna account in seconds." },
+      { title: "Create account — Melyno" },
+      { name: "description", content: "Create your free Melyno account in seconds." },
     ],
   }),
   component: RegisterPage,
@@ -26,7 +26,7 @@ function RegisterPage() {
             <Logo />
           </div>
           <h1 className="text-3xl font-bold text-primary">Create account</h1>
-          <p className="mt-2 text-muted-foreground text-sm">Join Melyna in less than a minute.</p>
+          <p className="mt-2 text-muted-foreground text-sm">Join Melyno in less than a minute.</p>
 
           <div className="mt-6 grid grid-cols-2 gap-2 rounded-xl bg-muted p-1">
             {(["customer", "provider"] as const).map((r) => (
@@ -92,7 +92,7 @@ function RegisterPage() {
           <Logo variant="light" />
           <div>
             <h2 className="text-4xl font-bold leading-tight">Move smarter from <span className="text-gradient-accent">day one</span></h2>
-            <p className="mt-4 text-white/70 max-w-md">Whether you're sending or moving, Melyna gives you the tools to do it better.</p>
+            <p className="mt-4 text-white/70 max-w-md">Whether you're sending or moving, Melyno gives you the tools to do it better.</p>
             <div className="mt-8 grid grid-cols-3 gap-4 max-w-md">
               {[
                 { v: "60s", l: "to match" },
@@ -106,7 +106,7 @@ function RegisterPage() {
               ))}
             </div>
           </div>
-          <div className="text-xs text-white/50">© {new Date().getFullYear()} Melyna</div>
+          <div className="text-xs text-white/50">© {new Date().getFullYear()} Melyno</div>
         </div>
       </div>
     </div>

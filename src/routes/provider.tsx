@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 export const Route = createFileRoute("/provider")({
   head: () => ({
     meta: [
-      { title: "Transporter Dashboard — Melyna" },
+      { title: "Transporter Dashboard — Melyno" },
       { name: "description", content: "Browse delivery requests, manage jobs, and view earnings." },
     ],
   }),
