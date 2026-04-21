@@ -23,6 +23,9 @@ export function Navbar() {
             <Link to="/dashboard" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary" activeProps={{ className: "text-primary" }}>
               Dashboard
             </Link>
+            <Link to="/faq" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary" activeProps={{ className: "text-primary" }}>
+              FAQ
+            </Link>
           </nav>
           <div className="hidden items-center gap-3 md:flex">
             <Link to="/login">
@@ -50,6 +53,7 @@ export function Navbar() {
                 { to: "/request", label: "Request Transport" },
                 { to: "/tracking", label: "Tracking" },
                 { to: "/dashboard", label: "Dashboard" },
+                { to: "/faq", label: "FAQ" },
                 { to: "/provider", label: "For Transporters" },
               ].map((l) => (
                 <Link
