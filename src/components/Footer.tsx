@@ -1,83 +1,46 @@
-import { Link } from "@tanstack/react-router";
-import { Logo } from "./Logo";
+import { Link } from 'react-router-dom'
+import { Logo } from './Logo'
 
 export function Footer() {
   return (
-    <footer className="bg-primary text-primary-foreground">
-      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="grid gap-10 md:grid-cols-4">
-          <div className="md:col-span-1">
-            <Logo variant="light" />
-            <p className="mt-4 text-sm text-primary-foreground/70 leading-relaxed">
-              Smart logistics, built for everyone. Move goods anywhere with confidence.
+    <footer className="bg-card border-t py-12">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div>
+            <Logo />
+            <p className="mt-4 text-sm text-muted-foreground">
+              Moving goods across East Africa with confidence.
             </p>
-            <div className="mt-6 flex gap-3">
-              {[
-                { icon: "fa-twitter", label: "Twitter" },
-                { icon: "fa-linkedin-in", label: "LinkedIn" },
-                { icon: "fa-instagram", label: "Instagram" },
-                { icon: "fa-facebook-f", label: "Facebook" },
-              ].map((s) => (
-                <a
-                  key={s.icon}
-                  href="#"
-                  aria-label={s.label}
-                  className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 transition-all hover:bg-accent hover:text-accent-foreground hover:scale-110"
-                >
-                  <i className={`fa-brands ${s.icon} text-sm`} />
-                </a>
-              ))}
+          </div>
+          <div>
+            <h3 className="text-sm font-semibold text-primary">Quick Links</h3>
+            <ul className="mt-4 space-y-2 text-sm">
+              <li><Link to="/" className="text-muted-foreground hover:text-accent">Home</Link></li>
+              <li><Link to="/faq" className="text-muted-foreground hover:text-accent">FAQ</Link></li>
+              <li><Link to="/login" className="text-muted-foreground hover:text-accent">Sign In</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-sm font-semibold text-primary">Contact</h3>
+            <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+              <li>Email: support@melyno.com</li>
+              <li>Phone: +254 700 123 456</li>
+              <li>Nairobi, Kenya</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-sm font-semibold text-primary">Follow Us</h3>
+            <div className="mt-4 flex gap-4">
+              <a href="#" className="text-muted-foreground hover:text-accent"><i className="fa-brands fa-facebook text-xl" /></a>
+              <a href="#" className="text-muted-foreground hover:text-accent"><i className="fa-brands fa-twitter text-xl" /></a>
+              <a href="#" className="text-muted-foreground hover:text-accent"><i className="fa-brands fa-linkedin text-xl" /></a>
             </div>
           </div>
-
-          {[
-            {
-              title: "Product",
-              links: [
-                { to: "/request", label: "Request Transport" },
-                { to: "/tracking", label: "Live Tracking" },
-                { to: "/provider", label: "For Transporters" },
-                { to: "/dashboard", label: "Dashboard" },
-              ],
-            },
-            {
-              title: "Company",
-              links: [
-                { to: "/", label: "About" },
-                { to: "/", label: "Careers" },
-                { to: "/", label: "Press" },
-                { to: "/", label: "Contact" },
-              ],
-            },
-            {
-              title: "Support",
-              links: [
-                { to: "/", label: "Help Center" },
-                { to: "/", label: "Safety" },
-                { to: "/", label: "Terms" },
-                { to: "/", label: "Privacy" },
-              ],
-            },
-          ].map((col) => (
-            <div key={col.title}>
-              <h4 className="text-sm font-semibold tracking-wide uppercase text-accent">{col.title}</h4>
-              <ul className="mt-4 space-y-3">
-                {col.links.map((l, i) => (
-                  <li key={i}>
-                    <Link to={l.to} className="text-sm text-primary-foreground/70 transition-colors hover:text-accent">
-                      {l.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
         </div>
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 md:flex-row">
-          <p className="text-xs text-primary-foreground/60">© {new Date().getFullYear()} Melyno. All rights reserved.</p>
-          <p className="text-xs text-primary-foreground/60">Built for movers everywhere.</p>
+        <div className="mt-8 border-t pt-8 text-center text-xs text-muted-foreground">
+          <p>© {new Date().getFullYear()} Melyno. All rights reserved.</p>
         </div>
       </div>
     </footer>
-  );
+  )
 }

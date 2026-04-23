@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link } from 'react-router-dom'
 
 export function Logo({ variant = "dark", showText = true }: { variant?: "dark" | "light"; showText?: boolean }) {
   return (
@@ -13,5 +13,5 @@ export function Logo({ variant = "dark", showText = true }: { variant?: "dark" |
         </span>
       )}
     </Link>
-  );
+  )
 }

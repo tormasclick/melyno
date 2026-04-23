@@ -1,0 +1,3 @@
+import { DashboardLayout } from '../../layouts/DashboardLayout'
+const menuItems = [{ icon: 'fa-tachometer-alt', label: 'Dashboard', path: '/admin' },{ icon: 'fa-box', label: 'Shipments', path: '/admin/shipments' },{ icon: 'fa-users', label: 'Users', path: '/admin/users' },{ icon: 'fa-handshake', label: 'Requests', path: '/admin/requests' },{ icon: 'fa-tag', label: 'Pricing', path: '/admin/pricing' },{ icon: 'fa-check-circle', label: 'Clearances', path: '/admin/clearances' },{ icon: 'fa-map-marker-alt', label: 'Tracking', path: '/admin/tracking' }]
+export function AdminRequests() { return <DashboardLayout title="Join Requests" menuItems={menuItems} role="admin"><div className="bg-white rounded-xl p-6"><p>Join requests management coming soon</p></div></DashboardLayout> }
